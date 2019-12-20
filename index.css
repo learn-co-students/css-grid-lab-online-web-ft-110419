@@ -2,12 +2,15 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: gray;
 }
 
 .grid-container {
   height: 100vh;
   width: 100vw;
-  /* your properties here */
+  display: grid;
+  grid-template: auto / repeat(3, 1fr);
+  grid-gap: 10px;
 }
 
 .grid-item {
@@ -15,4 +18,6 @@ body {
   border: 1px solid black;
 }
 
-/* add the .bigItem class */
+.bigItem {
+  grid-area: 2 / 2 / 4 / 4;
+}
